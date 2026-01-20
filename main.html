@@ -4,13 +4,63 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		form{
+			text-align:center;
+			padding:=10px\
+			width:100px;
+			height:100px;
+			margin:20px;
+		}
+		button{
+			background-color:yellow;
+			border-radius:10px;
+			border:none;
+		}
+		button:hover{
+			background-color:black;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+<form method="post">
+	<label for="name">Name</label>
+	<input id="name" name="name" type="text" required="yes">
+<br>
+	<label for="email">Email</label>
+	<input id="email" name="email" type="Email" required="yes">
+<br>
+	<label >Gender:</label>
+	<label >Male</label>
+	<input  type="radio" name="gender"  value="male" required="yes">
+		<label>Female</label>
+	<input type="radio" name="gender" value="female" required="yes" >
+<br>
+	<label for="car">Car Brands</label>
+	<select id="car" type="dropdown" >
+		<option>BMW</option>
+		<option>Audi</option>
+		<option>Mercedez</option>
+		
+	</select>
+<br>
+	<label for="carage">Car Age</label>
+	<input id="carage" type="Number" required="yes">
 
+	<br>
+	<label for="dop">Date of Purchase</label>
+	<input id="dop" type="Date" required="yes">
+
+	<br>
+	<label for="password">Password</label>
+	<input id="password" type="Password" required="yes">
+	<br>
+	<button type="button">Submit</button>
+</form>
 </body>
 
 </html>
